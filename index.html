@@ -2,300 +2,260 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Muhammad Imran | Medical Physics</title>
+<title>Muhammad Imran, PhD</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #202124;
-      background: white;
-      line-height: 1.6;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    .page {
-      max-width: 1250px;
-      margin: 0 auto;
-      padding: 55px 45px;
-      display: grid;
-      grid-template-columns: 210px 1fr;
-      gap: 55px;
-    }
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #3d3d3d;
+    background: white;
+}
 
-    /* LEFT SIDE */
+/* TOP STRIP */
 
-    .sidebar h1 {
-      font-size: 29px;
-      line-height: 1.2;
-      margin: 0 0 30px 0;
-      font-weight: 500;
-    }
+.topbar {
+    height: 50px;
+    background: #7b0000;
+}
 
-    .sidebar nav a {
-      display: block;
-      text-decoration: none;
-      color: #00a5b5;
-      font-size: 19px;
-      margin: 13px 0;
-    }
+/* HEADER */
 
-    .sidebar nav a:hover {
-      text-decoration: underline;
-    }
+.header {
+    max-width: 1150px;
+    margin: auto;
+    padding: 42px 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    /* MAIN AREA */
+.brand {
+    color: #800000;
+}
 
-    .main {
-      font-size: 18px;
-    }
+.brand-small {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
 
-    .profile-photo {
-      width: 215px;
-      height: 215px;
-      object-fit: cover;
-      border-radius: 50%;
-      float: right;
-      margin: 0 0 30px 45px;
-    }
+.brand-large {
+    font-family: Georgia, serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+}
 
-    .intro {
-      font-size: 19px;
-      margin-top: 0;
-    }
+.site-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 300;
+    max-width: 470px;
+}
 
-    h2 {
-      font-size: 30px;
-      font-weight: 500;
-      margin-top: 45px;
-      margin-bottom: 15px;
-    }
+/* NAVIGATION */
 
-    h3 {
-      margin-bottom: 5px;
-    }
+.nav-container {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
 
-    a {
-      color: #00a5b5;
-    }
+nav {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    padding: 0 30px;
+}
 
-    .section {
-      margin-top: 35px;
-    }
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px 19px;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
 
-    .item {
-      border-bottom: 1px solid #bbb;
-      padding: 13px 0;
-    }
+nav a:first-child {
+    color: #800000;
+    border-bottom: 3px solid #800000;
+}
 
-    .item:last-child {
-      border-bottom: none;
-    }
+nav a:hover {
+    color: #800000;
+}
 
-    .footer {
-      clear: both;
-      margin-top: 70px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      color: #666;
-      font-size: 14px;
-    }
+/* HOME */
 
-    @media (max-width: 750px) {
+.hero {
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 30px 80px;
+    display: grid;
+    grid-template-columns: 1.6fr .8fr;
+    gap: 80px;
+    align-items: start;
+}
 
-      .page {
+.hero h1 {
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0 0 5px;
+}
+
+.position {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.details {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 65px;
+}
+
+.bio {
+    max-width: 690px;
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.photo {
+    width: 100%;
+    max-width: 330px;
+    min-height: 430px;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    height: 45px;
+    margin-top: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .header {
         display: block;
-        padding: 30px 25px;
-      }
-
-      .sidebar {
-        margin-bottom: 35px;
-      }
-
-      .sidebar nav a {
-        display: inline-block;
-        margin-right: 15px;
-      }
-
-      .profile-photo {
-        float: none;
-        display: block;
-        margin: 0 auto 30px auto;
-        width: 180px;
-        height: 180px;
-      }
     }
-  </style>
+
+    .site-title {
+        margin-top: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .hero {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .photo {
+        margin-top: 40px;
+    }
+}
+
+</style>
 </head>
 
 
 <body>
 
-<div class="page">
-
-  <!-- LEFT SIDEBAR -->
-
-  <aside class="sidebar">
-
-    <h1>Muhammad Imran</h1>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#medical-physics">Medical Physics</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </aside>
+<div class="topbar"></div>
 
 
-  <!-- MAIN CONTENT -->
+<header class="header">
 
-  <main class="main">
-
-    <!-- We will add your photograph later -->
-
-    <section id="about">
-
-      <p class="intro">
-        I am <strong>Muhammad Imran, PhD</strong>, with interests in
-        diagnostic medical physics, medical imaging, computational physics,
-        data analysis, and artificial intelligence.
-      </p>
-
-      <p>
-        My work and training span medical imaging physics and quantitative
-        analysis, with particular interests in MRI, CT, radiography,
-        fluoroscopy, image quality, radiation dosimetry, and computational
-        methods.
-      </p>
-
-    </section>
-
-
-    <section id="medical-physics">
-
-      <h2>Medical Physics</h2>
-
-      <p>
-        My interests in diagnostic medical physics include clinical imaging
-        physics, image quality assessment, quality assurance, radiation
-        dosimetry, and quantitative imaging.
-      </p>
-
-      <div class="item">
-        Magnetic Resonance Imaging (MRI)
-      </div>
-
-      <div class="item">
-        Computed Tomography (CT)
-      </div>
-
-      <div class="item">
-        Radiography and Fluoroscopy
-      </div>
-
-      <div class="item">
-        Medical Image Quality and Quality Assurance
-      </div>
-
-    </section>
-
-
-    <section id="research">
-
-      <h2>Research</h2>
-
-      <p>
-        My research interests include computational physics, medical imaging,
-        quantitative image analysis, data science, and applications of
-        machine learning and artificial intelligence.
-      </p>
-
-    </section>
-
-
-    <section id="publications">
-
-      <h2>Publications</h2>
-
-      <p>
-        Selected publications and research work will be listed here.
-      </p>
-
-    </section>
-
-
-    <section id="projects">
-
-      <h2>Projects</h2>
-
-      <div class="item">
-        Medical Physics and Imaging Projects
-      </div>
-
-      <div class="item">
-        Computational Physics
-      </div>
-
-      <div class="item">
-        Data Analysis and Machine Learning
-      </div>
-
-      <p>
-        Additional projects are available on my
-        <a href="https://github.com/imran1gee">GitHub profile</a>.
-      </p>
-
-    </section>
-
-
-    <section id="education">
-
-      <h2>Education</h2>
-
-      <div class="item">
-        <strong>PhD</strong><br>
-        University of Florida
-      </div>
-
-    </section>
-
-
-    <section id="contact">
-
-      <h2>Contact</h2>
-
-      <p>
-        GitHub:
-        <a href="https://github.com/imran1gee">
-          github.com/imran1gee
-        </a>
-      </p>
-
-      <p>
-        LinkedIn and professional contact information can be added here.
-      </p>
-
-    </section>
-
-
-    <div class="footer">
-      © 2026 Muhammad Imran
+    <div class="brand">
+        <div class="brand-small">MUHAMMAD IMRAN</div>
+        <div class="brand-large">MEDICAL PHYSICS</div>
     </div>
 
-  </main>
+    <div class="site-title">
+        Physics, Computation and<br>
+        Medical Imaging
+    </div>
+
+</header>
+
+
+<div class="nav-container">
+
+<nav>
+
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT ME</a>
+<a href="clinical.html">CLINICAL EXPERIENCE</a>
+<a href="research.html">RESEARCH</a>
+<a href="publications.html">PUBLICATIONS</a>
+<a href="cv.pdf">CV</a>
+<a href="contact.html">CONTACT</a>
+
+</nav>
 
 </div>
 
+
+<main class="hero">
+
+<div>
+
+<h1>Muhammad Imran, PhD</h1>
+
+<div class="position">
+Diagnostic Medical Physics Resident
+</div>
+
+<div class="details">
+Class 2025–2027<br>
+University of Chicago Medicine
+</div>
+
+<div class="bio">
+
+Clinical medical physics resident with interests in diagnostic imaging,
+image quality, radiation dosimetry, quality assurance, and medical
+imaging research.
+
+</div>
+
+</div>
+
+
+<div>
+
+<div class="photo">
+Professional Photo
+</div>
+
+</div>
+
+</main>
+
+
+<footer></footer>
+
 </body>
+
 </html>
