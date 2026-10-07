@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me | Muhammad Imran, PhD</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #3d3d3d;
+    background: white;
+}
+
+/* TOP STRIP */
+
+.topbar {
+    height: 50px;
+    background: #7b0000;
+}
+
+/* HEADER */
+
+.header {
+    max-width: 1150px;
+    margin: auto;
+    padding: 42px 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #800000;
+}
+
+.brand-small {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.brand-large {
+    font-family: Georgia, serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+}
+
+.site-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 300;
+    max-width: 470px;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    padding: 0 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px 19px;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+nav a:hover {
+    color: #800000;
+}
+
+/* ABOUT ME ACTIVE TAB */
+
+nav a.active {
+    color: #800000;
+    border-bottom: 3px solid #800000;
+}
+
+/* ABOUT PAGE */
+
+.about-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 60px 30px 85px;
+    display: grid;
+    grid-template-columns: 1.2fr .9fr;
+    gap: 90px;
+}
+
+.about-container h1 {
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+.about-container h2 {
+    font-size: 34px;
+    margin: 0 0 18px;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.about-text p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.background {
+    font-size: 19px;
+    line-height: 1.55;
+}
+
+.background h3 {
+    font-size: 20px;
+    margin: 25px 0 3px;
+}
+
+.background h3:first-of-type {
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    height: 45px;
+    margin-top: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .header {
+        display: block;
+    }
+
+    .site-title {
+        margin-top: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .about-container {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .background {
+        margin-top: 50px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="topbar"></div>
+
+
+<header class="header">
+
+    <div class="brand">
+        <div class="brand-small">MUHAMMAD IMRAN, PhD</div>
+        <div class="brand-large">MEDICAL PHYSICS</div>
+    </div>
+
+    <div class="site-title">
+        Physics, Computation and<br>
+        Medical Imaging
+    </div>
+
+</header>
+
+
+<div class="nav-container">
+
+<nav>
+
+<a href="index.html">HOME</a>
+<a href="about.html" class="active">ABOUT ME</a>
+<a href="clinical.html">CLINICAL EXPERIENCE</a>
+<a href="research.html">RESEARCH</a>
+<a href="publications.html">PUBLICATIONS</a>
+<a href="cv.pdf">CV</a>
+<a href="contact.html">CONTACT</a>
+
+</nav>
+
+</div>
+
+
+<main class="about-container">
+
+<section>
+
+<h1>About Me</h1>
+
+<div class="about-text">
+
+<p>
+I am a Diagnostic Medical Physics Resident at the University of Chicago
+Medicine, with a background in physics, medical imaging, and quantitative
+image analysis.
+</p>
+
+<p>
+My professional interests include diagnostic imaging physics, image quality,
+radiation dosimetry, quality assurance, and the application of computational
+methods to medical imaging. My clinical training encompasses a broad range
+of imaging modalities, including radiography, fluoroscopy, CT, MRI,
+mammography, ultrasound, and nuclear medicine.
+</p>
+
+<p>
+My research interests focus on quantitative image-quality assessment,
+observer performance, and developing practical methods for evaluating
+medical imaging systems.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Background at a Glance</h2>
+
+<div class="background">
+
+<h3>Current Position</h3>
+Diagnostic Medical Physics Resident<br>
+University of Chicago Medicine
+
+<h3>Education</h3>
+PhD in Physics (Theoretical Physics)<br><br>
+University of Florida
+
+<h3>Professional Interests</h3>
+Diagnostic Imaging<br>
+Image Quality<br>
+Radiation Dosimetry<br>
+Quality Assurance<br>
+Medical Imaging Research
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer></footer>
+
+</body>
+
+</html>
