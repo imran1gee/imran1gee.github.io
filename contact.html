@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Muhammad Imran, PhD</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #3d3d3d;
+    background: white;
+}
+
+/* TOP STRIP */
+
+.topbar {
+    height: 50px;
+    background: #7b0000;
+}
+
+/* HEADER */
+
+.header {
+    max-width: 1150px;
+    margin: auto;
+    padding: 42px 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #800000;
+}
+
+.brand-small {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.brand-large {
+    font-family: Georgia, serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+}
+
+.site-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 300;
+    max-width: 470px;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    padding: 0 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px 19px;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+nav a:hover {
+    color: #800000;
+}
+
+nav a.active {
+    color: #800000;
+    border-bottom: 3px solid #800000;
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 30px 90px;
+
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-info {
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+.contact-info h1 {
+    font-size: 25px;
+    margin: 0 0 2px;
+    font-weight: 700;
+}
+
+.position {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.contact-block {
+    margin-bottom: 25px;
+}
+
+.contact-info strong {
+    font-weight: 700;
+}
+
+.contact-info a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    height: 45px;
+    margin-top: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .header {
+        display: block;
+    }
+
+    .site-title {
+        margin-top: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .contact-container {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .contact-image {
+        margin-top: 45px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="topbar"></div>
+
+
+<header class="header">
+
+    <div class="brand">
+
+        <div class="brand-small">
+            MUHAMMAD IMRAN, PhD
+        </div>
+
+        <div class="brand-large">
+            MEDICAL PHYSICS
+        </div>
+
+    </div>
+
+
+    <div class="site-title">
+        Physics, Computation and<br>
+        Medical Imaging
+    </div>
+
+</header>
+
+
+<div class="nav-container">
+
+<nav>
+
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT ME</a>
+<a href="clinical.html">CLINICAL EXPERIENCE</a>
+<a href="research.html">RESEARCH</a>
+<a href="publications.html">PUBLICATIONS</a>
+<a href="cv.pdf">CV</a>
+<a href="contact.html" class="active">CONTACT</a>
+
+</nav>
+
+</div>
+
+
+<main class="contact-container">
+
+
+<section class="contact-info">
+
+<h1>Muhammad Imran, PhD</h1>
+
+<div class="position">
+Diagnostic Medical Physics Resident
+</div>
+
+
+<div class="contact-block">
+
+<strong>Class</strong> 2025–2027<br>
+
+<strong>Department of Radiology</strong><br>
+
+University of Chicago Medicine
+
+</div>
+
+
+<div class="contact-block">
+
+5841 S. Maryland Ave.<br>
+Chicago, IL 60637
+
+</div>
+
+
+<div class="contact-block">
+
+<strong>Email:</strong>
+<a href="mailto:Muhammad.Imran@uchicagomedicine.org">
+Muhammad.Imran@uchicagomedicine.org
+</a>
+
+</div>
+
+
+</section>
+
+
+<section>
+
+<img
+class="contact-image"
+src="contact-photo.png"
+alt="Muhammad Imran">
+
+</section>
+
+
+</main>
+
+
+<footer></footer>
+
+
+</body>
+
+</html>
