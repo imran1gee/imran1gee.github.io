@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research | Muhammad Imran, PhD</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #3d3d3d;
+    background: white;
+}
+
+/* TOP STRIP */
+
+.topbar {
+    height: 50px;
+    background: #7b0000;
+}
+
+/* HEADER */
+
+.header {
+    max-width: 1150px;
+    margin: auto;
+    padding: 42px 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #800000;
+}
+
+.brand-small {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.brand-large {
+    font-family: Georgia, serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+}
+
+.site-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 300;
+    max-width: 470px;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    padding: 0 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px 19px;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+nav a:hover {
+    color: #800000;
+}
+
+nav a.active {
+    color: #800000;
+    border-bottom: 3px solid #800000;
+}
+
+/* RESEARCH */
+
+.research-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 30px 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.research-text h1 {
+    font-size: 34px;
+    line-height: 1.05;
+    margin: 0 0 18px;
+    font-weight: 700;
+}
+
+.research-text p {
+    font-size: 20px;
+    line-height: 1.65;
+    margin: 0 0 22px;
+}
+
+.methods {
+    margin-top: 25px;
+}
+
+.methods strong {
+    font-weight: 700;
+}
+
+.research-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    height: 45px;
+    margin-top: 30px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .header {
+        display: block;
+    }
+
+    .site-title {
+        margin-top: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 12px;
+    }
+
+    .research-container {
+        display: block;
+        padding-top: 40px;
+    }
+
+    .research-image {
+        margin-top: 40px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="topbar"></div>
+
+
+<header class="header">
+
+    <div class="brand">
+
+        <div class="brand-small">
+            MUHAMMAD IMRAN, PhD
+        </div>
+
+        <div class="brand-large">
+            MEDICAL PHYSICS
+        </div>
+
+    </div>
+
+
+    <div class="site-title">
+
+        Physics, Computation and<br>
+        Medical Imaging
+
+    </div>
+
+</header>
+
+
+<div class="nav-container">
+
+<nav>
+
+<a href="index.html">HOME</a>
+
+<a href="about.html">ABOUT ME</a>
+
+<a href="clinical.html">CLINICAL EXPERIENCE</a>
+
+<a href="research.html" class="active">RESEARCH</a>
+
+<a href="publications.html">PUBLICATIONS</a>
+
+<a href="cv.pdf">CV</a>
+
+<a href="contact.html">CONTACT</a>
+
+</nav>
+
+</div>
+
+
+<main class="research-container">
+
+
+<section class="research-text">
+
+<h1>
+Mobile C-Arm Image Quality<br>
+Research
+</h1>
+
+
+<p>
+Evaluated image quality across 11 mobile C-Arm systems using
+contrast-detail phantom imaging, human observer assessment,
+and quantitative image analysis.
+</p>
+
+
+<p class="methods">
+
+<strong>Methods:</strong>
+Contrast-detail analysis · Observer studies · Rose-SNR ·
+Image processing · Statistical comparison
+
+</p>
+
+</section>
+
+
+<section>
+
+<img
+class="research-image"
+src="carm-research.png"
+alt="Mobile C-Arm contrast-detail image quality research">
+
+</section>
+
+
+</main>
+
+
+<footer></footer>
+
+
+</body>
+
+</html>
