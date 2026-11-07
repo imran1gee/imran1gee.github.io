@@ -1,277 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Research in computational physics, electromagnetic modeling, quantum transport, numerical simulation, and medical physics by Muhammad Imran, PhD.">
 <title>Research | Muhammad Imran, PhD</title>
-
 <style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #3d3d3d;
-    background: white;
-}
-
-/* TOP STRIP */
-
-.topbar {
-    height: 50px;
-    background: #7b0000;
-}
-
-/* HEADER */
-
-.header {
-    max-width: 1150px;
-    margin: auto;
-    padding: 42px 30px 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    color: #800000;
-}
-
-.brand-small {
-    font-size: 16px;
-    letter-spacing: 3px;
-}
-
-.brand-large {
-    font-family: Georgia, serif;
-    font-size: 37px;
-    letter-spacing: 2px;
-}
-
-.site-title {
-    font-size: 32px;
-    line-height: 1.15;
-    font-weight: 300;
-    max-width: 470px;
-}
-
-/* NAVIGATION */
-
-.nav-container {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-nav {
-    max-width: 1150px;
-    margin: auto;
-    display: flex;
-    padding: 0 30px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 20px 19px;
-    font-size: 16px;
-    letter-spacing: .5px;
-}
-
-nav a:hover {
-    color: #800000;
-}
-
-nav a.active {
-    color: #800000;
-    border-bottom: 3px solid #800000;
-}
-
-/* RESEARCH */
-
-.research-container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 65px 30px 100px;
-
-    display: grid;
-    grid-template-columns: 1fr 1.15fr;
-    gap: 70px;
-    align-items: start;
-}
-
-.research-text h1 {
-    font-size: 34px;
-    line-height: 1.05;
-    margin: 0 0 18px;
-    font-weight: 700;
-}
-
-.research-text p {
-    font-size: 20px;
-    line-height: 1.65;
-    margin: 0 0 22px;
-}
-
-.methods {
-    margin-top: 25px;
-}
-
-.methods strong {
-    font-weight: 700;
-}
-
-.research-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* FOOTER */
-
-footer {
-    background: #333;
-    height: 45px;
-    margin-top: 30px;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .header {
-        display: block;
-    }
-
-    .site-title {
-        margin-top: 25px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        padding: 12px;
-    }
-
-    .research-container {
-        display: block;
-        padding-top: 40px;
-    }
-
-    .research-image {
-        margin-top: 40px;
-    }
-}
-
+:root{--navy:#0b1c35;--navy2:#17385b;--cyan:#55c8e8;--ink:#172e49;--muted:#52647a;--paper:#f3f6fb}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}a{color:#087fa5}
+header{background:var(--navy);color:white}.header-inner{max-width:1200px;margin:auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center;gap:25px}.brand{font-size:22px;font-weight:700;line-height:1.4}.brand small{display:block;color:#a0d8eb;font-size:12px;letter-spacing:2px;text-transform:uppercase}.tagline{color:#c5d8e9;font-size:15px;text-align:right}.nav-wrap{background:#112746}nav{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;padding:0 32px}nav a{color:#e5edf7;text-decoration:none;padding:17px 15px;font-size:13px;font-weight:700;letter-spacing:.3px}nav a:hover,nav a.active{background:#25476c;color:white}
+.hero{background:linear-gradient(115deg,#0b1c35,#17385b);color:white}.hero-inner{max-width:1200px;margin:auto;padding:72px 32px 76px}.eyebrow{color:#61d0ef;letter-spacing:2px;text-transform:uppercase;font-size:13px;font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,5vw,62px);line-height:1.15;margin:18px 0 22px}.hero p{font-size:19px;max-width:850px;color:#d9e7f5;line-height:1.8;margin:0}
+main{max-width:1200px;margin:auto;padding:55px 32px 80px}.section-heading{font-family:Georgia,serif;font-size:32px;margin:0 0 24px;color:#102b49}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card{background:white;border:1px solid #dbe4ee;border-radius:16px;padding:30px;box-shadow:0 8px 25px rgba(12,35,65,.04)}.card h2{font-family:Georgia,serif;font-size:25px;line-height:1.3;margin:0 0 16px;color:#123457}.card p{font-size:16px;color:#465b72;margin:0 0 12px}.card ul{padding-left:21px;margin:10px 0 0;color:#465b72}.card li{margin-bottom:9px}.kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:#087fa5;margin-bottom:12px}.wide{grid-column:1/-1}.divider{height:1px;background:#dce5ef;margin:48px 0}.project-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.project-links a{display:inline-block;text-decoration:none;border:1px solid #a8c6da;border-radius:7px;padding:9px 14px;font-size:14px;font-weight:bold}.project-links a:hover{background:#e7f5fa}.research-figure{max-width:650px;width:100%;height:auto;border-radius:10px;display:block;margin-top:22px}.figure-caption{font-size:13px;color:#62748a;margin-top:8px}footer{background:#0b1c35;color:#c2d3e4;padding:25px 32px;text-align:center;font-size:13px}
+@media(max-width:760px){.header-inner{display:block}.tagline{text-align:left;margin-top:12px}nav{padding:0 12px}nav a{padding:12px 10px;font-size:12px}.hero-inner{padding:55px 24px}main{padding:38px 20px}.cards{grid-template-columns:1fr}.card{padding:24px}.section-heading{font-size:28px}}
 </style>
-
 </head>
-
-
 <body>
-
-<div class="topbar"></div>
-
-
-<header class="header">
-
-    <div class="brand">
-
-        <div class="brand-small">
-            MUHAMMAD IMRAN, PhD
-        </div>
-
-        <div class="brand-large">
-            MEDICAL PHYSICS
-        </div>
-
-    </div>
-
-
-    <div class="site-title">
-
-        Physics, Computation and<br>
-        Medical Imaging
-
-    </div>
-
-</header>
-
-
-<div class="nav-container">
-
-<nav>
-
-<a href="index.html">HOME</a>
-
-<a href="about.html">ABOUT ME</a>
-
-<a href="clinical.html">CLINICAL EXPERIENCE</a>
-
-<a href="research.html" class="active">RESEARCH</a>
-
-<a href="publications.html">PUBLICATIONS</a>
-
-<a href="cv.pdf">CV</a>
-
-<a href="contact.html">CONTACT</a>
-
-</nav>
-
+<header><div class="header-inner"><div class="brand">Muhammad Imran, PhD<small>Computational Physics &amp; Medical Physics</small></div><div class="tagline">Scientific Computing · Numerical Modeling · Research &amp; Development</div></div></header>
+<div class="nav-wrap"><nav aria-label="Main navigation"><a href="index.html">HOME</a><a href="about.html">ABOUT ME</a><a href="clinical.html">CLINICAL EXPERIENCE</a><a href="research.html" class="active" aria-current="page">RESEARCH</a><a href="publications.html">PUBLICATIONS</a><a href="cv.pdf">CV</a><a href="contact.html">CONTACT</a></nav></div>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Physics · Computation · Scientific Discovery</div><h1>Research &amp; Scientific Computing</h1><p>My research connects theoretical physics, numerical modeling, and computational methods to investigate quantum materials, electronic transport, electromagnetic phenomena, and applied radiation physics. I develop and use scientific software to study complex physical systems and analyze quantitative data.</p></div></section>
+<main><h2 class="section-heading">Research Areas</h2><div class="cards">
+<section class="card"><div class="kicker">01 · Electromagnetic Modeling</div><h2>Computational Electromagnetics &amp; THz Near-Field Optics</h2><p>Research involving terahertz near-field electromagnetic response, nanoscale optical phenomena, and computational modeling, including work at Ames National Laboratory.</p><ul><li>THz near-field response and electromagnetic field modeling</li><li>Numerical analysis of field distributions and material response</li><li>Research contributions to nanoscale THz studies of materials</li></ul><div class="project-links"><a href="https://github.com/imran1gee/Computational-Study-of-Near-Field-Atomic-Force-Microscopy-upto-20-nms">View related project</a></div></section>
+<section class="card"><div class="kicker">02 · Condensed Matter Theory</div><h2>Quantum Transport &amp; Topological Materials</h2><p>Theoretical and computational studies of electronic transport in low-dimensional and topological quantum systems, including graphene and Weyl semimetals.</p><ul><li>Berry curvature and Lorentz-force effects in magnetotransport</li><li>Hofstadter physics in twisted graphene structures</li><li>Spin-orbit coupling, Hall effects, and electron transport</li></ul><div class="project-links"><a href="https://github.com/imran1gee">Explore quantum transport code</a></div></section>
+<section class="card"><div class="kicker">03 · Scientific Software</div><h2>Numerical Modeling &amp; Scientific Computing</h2><p>Scientific computing for physics-based simulation, data analysis, and reproducible computational research.</p><ul><li>Python, MATLAB, and Mathematica</li><li>Fourier analysis, numerical integration, and matrix-based calculations</li><li>Parameter sweeps, visualization, and simulation automation</li><li>Parallel and computationally intensive numerical workflows</li></ul></section>
+<section class="card"><div class="kicker">04 · Applied Radiation Physics</div><h2>Computational Medical Physics</h2><p>Computational projects and training that connect quantitative physics methods with radiation dose calculation and medical physics applications.</p><ul><li>Monte Carlo radiation dose simulation in a water phantom</li><li>Numerical approaches to dose analysis</li><li>Interest in computational methods for therapeutic medical physics</li></ul><div class="project-links"><a href="https://github.com/imran1gee/MonteCarlo-Radiation-Dose">Monte Carlo project</a></div></section>
 </div>
-
-
-<main class="research-container">
-
-
-<section class="research-text">
-
-<h1>
-Mobile C-Arm Image Quality<br>
-Research
-</h1>
-
-
-<p>
-Evaluated image quality across 11 mobile C-Arm systems using
-contrast-detail phantom imaging, human observer assessment,
-and quantitative image analysis.
-</p>
-
-
-<p class="methods">
-
-<strong>Methods:</strong>
-Contrast-detail analysis · Observer studies · Rose-SNR ·
-Image processing · Statistical comparison
-
-</p>
-
-</section>
-
-
-<section>
-
-<img
-class="research-image"
-src="carm-research.png"
-alt="Mobile C-Arm contrast-detail image quality research">
-
-</section>
-
-
-</main>
-
-
-<footer></footer>
-
-
-</body>
-
-</html>
+<div class="divider"></div><h2 class="section-heading">Selected Projects &amp; Publications</h2><div class="cards"><section class="card wide"><div class="kicker">Research Portfolio</div><h2>Open Scientific Code</h2><p>Selected repositories include electromagnetic modeling, quantum transport simulations, and radiation dose calculations. The public code portfolio illustrates scientific programming and numerical approaches used across my research.</p><div class="project-links"><a href="https://github.com/imran1gee">GitHub Portfolio</a><a href="publications.html">Peer-Reviewed Publications</a></div></section></div>
+<div class="divider"></div><h2 class="section-heading">Additional Applied Research</h2><div class="cards"><section class="card wide"><div class="kicker">Quantitative Assessment · Medical Physics</div><h2>Mobile C-Arm Image Quality Research</h2><p>Evaluated image quality across 11 mobile C-arm systems using contrast-detail phantom imaging, human observer assessment, and quantitative image analysis.</p><p><strong>Methods:</strong> Contrast-detail analysis, observer studies, Rose-SNR, image processing, and statistical comparison.</p><img class="research-figure" src="carm-research.png" alt="Research figure from mobile C-arm contrast-detail image quality assessment" loading="lazy"><div class="figure-caption">Mobile C-arm image quality research figure.</div></section></div>
+</main><footer>© 2026 Muhammad Imran, PhD · Computational Physics &amp; Medical Physics</footer>
+</body></html>
