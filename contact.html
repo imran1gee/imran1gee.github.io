@@ -1,13 +1,18 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Contact Muhammad Imran, PhD — Computational Physicist specializing in scientific computing, numerical modeling, and medical physics.">
+
+<meta name="description"
+content="Contact Muhammad Imran, PhD — Computational Physicist specializing in scientific computing, numerical modeling, and medical physics.">
+
 <title>Contact | Muhammad Imran, PhD</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -92,6 +97,7 @@ nav a.active {
         #0b1d36,
         #193b60
     );
+
     color: white;
     padding: 80px 30px 95px;
 }
@@ -180,7 +186,57 @@ nav a.active {
     text-decoration: underline;
 }
 
-/* OPPORTUNITIES */
+/* EMAIL BUTTONS */
+
+.email-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #50c1e2;
+    color: #09223b;
+
+    padding: 15px 22px;
+    border-radius: 7px;
+    border: none;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background .2s;
+}
+
+.button:hover {
+    background: #88ddf4;
+}
+
+.button-secondary {
+    background: #173b60;
+    color: white;
+}
+
+.button-secondary:hover {
+    background: #285781;
+}
+
+.copy-status {
+    font-size: 14px;
+    color: #17618e;
+    margin-top: 12px;
+    min-height: 20px;
+}
+
+/* PROFESSIONAL INTERESTS */
 
 .opportunity-list {
     padding-left: 20px;
@@ -193,21 +249,6 @@ nav a.active {
     font-size: 17px;
     line-height: 1.8;
     color: #425d7b;
-}
-
-.button {
-    display: inline-block;
-    background: #50c1e2;
-    color: #09223b;
-    padding: 15px 24px;
-    border-radius: 7px;
-    font-weight: 700;
-    text-decoration: none;
-    margin-top: 15px;
-}
-
-.button:hover {
-    background: #88ddf4;
 }
 
 /* FOOTER */
@@ -223,6 +264,7 @@ footer {
 /* MOBILE */
 
 @media (max-width: 800px) {
+
     .header-inner {
         display: block;
     }
@@ -256,18 +298,31 @@ footer {
     .card {
         padding: 26px;
     }
+
+    .email-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button {
+        width: 100%;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="header-inner">
+
         <div>
             <div class="brand-name">
                 Muhammad Imran, PhD
             </div>
+
             <div class="brand-subtitle">
                 COMPUTATIONAL PHYSICS &amp; MEDICAL PHYSICS
             </div>
@@ -277,23 +332,41 @@ footer {
             Scientific Computing · Numerical Modeling ·
             Research &amp; Development
         </div>
+
     </div>
+
 </header>
 
 <div class="nav-container">
+
 <nav aria-label="Main navigation">
+
     <a href="index.html">HOME</a>
+
     <a href="about.html">ABOUT ME</a>
+
     <a href="clinical.html">CLINICAL EXPERIENCE</a>
+
     <a href="research.html">RESEARCH</a>
+
     <a href="publications.html">PUBLICATIONS</a>
+
     <a href="cv.pdf">CV</a>
-    <a href="contact.html" class="active" aria-current="page">CONTACT</a>
+
+    <a href="contact.html"
+       class="active"
+       aria-current="page">
+        CONTACT
+    </a>
+
 </nav>
+
 </div>
 
 <section class="hero">
+
     <div class="hero-inner">
+
         <div class="eyebrow">
             PROFESSIONAL CONNECTIONS · COLLABORATION
         </div>
@@ -303,12 +376,16 @@ footer {
         <p>
             I welcome opportunities for research collaboration,
             scientific software development, computational modeling,
-            and medical physics. I am particularly interested in
-            positions where physics-based reasoning, numerical
-            simulation, and scientific computing can contribute
-            to technological innovation and real-world applications.
+            and medical physics.
+
+            I am particularly interested in positions where
+            physics-based reasoning, numerical simulation,
+            and scientific computing can contribute to
+            technological innovation and real-world applications.
         </p>
+
     </div>
+
 </section>
 
 <main class="contact-section">
@@ -316,50 +393,110 @@ footer {
 <div class="contact-grid">
 
 <section class="card">
+
     <h2>Contact Information</h2>
 
     <div class="contact-item">
-        <div class="contact-label">Email</div>
-        <div class="contact-value">
-            <a href="mailto:imran1gee@gmail.com">
-                imran1gee@gmail.com
-            </a>
+
+        <div class="contact-label">
+            Email
         </div>
+
+        <div class="contact-value">
+            imran1gee@gmail.com
+        </div>
+
     </div>
 
     <div class="contact-item">
-        <div class="contact-label">LinkedIn</div>
+
+        <div class="contact-label">
+            LinkedIn
+        </div>
+
         <div class="contact-value">
+
             <a href="https://www.linkedin.com/in/muhammad-imran-91982252/"
-               target="_blank" rel="noopener noreferrer">
+               target="_blank"
+               rel="noopener noreferrer">
+
                 Connect on LinkedIn
+
             </a>
+
         </div>
+
     </div>
 
     <div class="contact-item">
-        <div class="contact-label">GitHub</div>
+
+        <div class="contact-label">
+            GitHub
+        </div>
+
         <div class="contact-value">
+
             <a href="https://github.com/imran1gee"
-               target="_blank" rel="noopener noreferrer">
+               target="_blank"
+               rel="noopener noreferrer">
+
                 github.com/imran1gee
+
             </a>
+
         </div>
+
     </div>
 
     <div class="contact-item">
-        <div class="contact-label">Location</div>
+
+        <div class="contact-label">
+            Location
+        </div>
+
         <div class="contact-value">
             Chicago, Illinois, USA
         </div>
+
     </div>
 
-    <a class="button" href="mailto:imran1gee@gmail.com">
-        Send an Email
-    </a>
+    <!-- EMAIL ACTIONS -->
+
+    <div class="email-actions">
+
+        <button
+            class="button"
+            type="button"
+            id="copyEmailButton"
+            onclick="copyEmail()">
+
+            Copy Email Address
+
+        </button>
+
+        <a
+            class="button button-secondary"
+            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=imran1gee%40gmail.com"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Compose in Gmail
+
+        </a>
+
+    </div>
+
+    <div
+        class="copy-status"
+        id="copyStatus"
+        role="status"
+        aria-live="polite">
+    </div>
+
 </section>
 
 <section class="card">
+
     <h2>Professional Interests</h2>
 
     <p class="opportunity-text">
@@ -368,21 +505,33 @@ footer {
     </p>
 
     <ul class="opportunity-list">
+
         <li>Computational Physics</li>
+
         <li>Scientific Computing</li>
+
         <li>Numerical Modeling &amp; Simulation</li>
+
         <li>Computational Electromagnetics</li>
+
         <li>Research &amp; Development</li>
+
         <li>Scientific Software Development</li>
+
         <li>Medical Physics</li>
+
         <li>Radiation Physics &amp; Dosimetry</li>
+
     </ul>
 
     <p class="opportunity-text">
+
         I welcome inquiries from research institutions,
         universities, healthcare organizations,
         and technology companies.
+
     </p>
+
 </section>
 
 </div>
@@ -390,9 +539,54 @@ footer {
 </main>
 
 <footer>
+
     © 2026 Muhammad Imran, PhD ·
     Computational Physics &amp; Medical Physics
+
 </footer>
+
+<script>
+
+async function copyEmail() {
+
+    const email = "imran1gee@gmail.com";
+
+    const button = document.getElementById("copyEmailButton");
+
+    const status = document.getElementById("copyStatus");
+
+    try {
+
+        await navigator.clipboard.writeText(email);
+
+        button.textContent = "Email Copied!";
+
+        status.textContent =
+            "Email address copied to clipboard.";
+
+        setTimeout(() => {
+
+            button.textContent = "Copy Email Address";
+
+            status.textContent = "";
+
+        }, 2500);
+
+    } catch (error) {
+
+        status.textContent =
+            "Please copy the email address shown above.";
+
+        window.prompt(
+            "Copy this email address:",
+            email
+        );
+
+    }
+
+}
+
+</script>
 
 </body>
 </html>
