@@ -1,285 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About Me | Muhammad Imran, PhD</title>
-
-<style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #3d3d3d;
-    background: white;
-}
-
-/* TOP STRIP */
-
-.topbar {
-    height: 50px;
-    background: #7b0000;
-}
-
-/* HEADER */
-
-.header {
-    max-width: 1150px;
-    margin: auto;
-    padding: 42px 30px 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    color: #800000;
-}
-
-.brand-small {
-    font-size: 16px;
-    letter-spacing: 3px;
-}
-
-.brand-large {
-    font-family: Georgia, serif;
-    font-size: 37px;
-    letter-spacing: 2px;
-}
-
-.site-title {
-    font-size: 32px;
-    line-height: 1.15;
-    font-weight: 300;
-    max-width: 470px;
-}
-
-/* NAVIGATION */
-
-.nav-container {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-nav {
-    max-width: 1150px;
-    margin: auto;
-    display: flex;
-    padding: 0 30px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 20px 19px;
-    font-size: 16px;
-    letter-spacing: .5px;
-}
-
-nav a:hover {
-    color: #800000;
-}
-
-/* ABOUT ME ACTIVE TAB */
-
-nav a.active {
-    color: #800000;
-    border-bottom: 3px solid #800000;
-}
-
-/* ABOUT PAGE */
-
-.about-container {
-    max-width: 1150px;
-    margin: auto;
-    padding: 60px 30px 85px;
-    display: grid;
-    grid-template-columns: 1.2fr .9fr;
-    gap: 90px;
-}
-
-.about-container h1 {
-    font-size: 36px;
-    margin: 0 0 15px;
-}
-
-.about-container h2 {
-    font-size: 34px;
-    margin: 0 0 18px;
-}
-
-.about-text {
-    font-size: 20px;
-    line-height: 1.65;
-}
-
-.about-text p {
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
-.background {
-    font-size: 19px;
-    line-height: 1.55;
-}
-
-.background h3 {
-    font-size: 20px;
-    margin: 25px 0 3px;
-}
-
-.background h3:first-of-type {
-    margin-top: 0;
-}
-
-/* FOOTER */
-
-footer {
-    background: #333;
-    height: 45px;
-    margin-top: 30px;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .header {
-        display: block;
-    }
-
-    .site-title {
-        margin-top: 25px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        padding: 12px;
-    }
-
-    .about-container {
-        display: block;
-        padding-top: 40px;
-    }
-
-    .background {
-        margin-top: 50px;
-    }
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Muhammad Imran, PhD — computational physicist specializing in scientific computing, numerical modeling, and medical physics.">
+  <title>About Me | Muhammad Imran, PhD</title>
+  <style>
+    :root { --navy:#0b1d36; --navy2:#142f50; --cyan:#52c3e5; --ink:#1a2d45; --muted:#52647b; --paper:#f4f7fb; --line:#dce5ee; }
+    * {box-sizing:border-box}
+    body {margin:0;font-family:Arial,"Helvetica Neue",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+    a {color:#12678a}
+    .site-header {background:var(--navy);color:#fff}
+    .header-inner {max-width:1250px;margin:auto;padding:24px 34px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+    .brand-name {font-size:23px;font-weight:750;letter-spacing:.1px}
+    .brand-tag {font-size:12px;letter-spacing:2px;color:#99d5e9;font-weight:700;margin-top:3px}
+    .header-note {font-size:15px;color:#d0dfed;text-align:right}
+    .nav-wrap {background:#112846;border-top:1px solid #29405d}
+    nav {max-width:1250px;margin:auto;padding:0 34px;display:flex;flex-wrap:wrap}
+    nav a {display:block;color:#edf5ff;text-decoration:none;font-size:13px;font-weight:700;padding:16px 17px;letter-spacing:.2px}
+    nav a:hover,nav a.active {background:#24476c;color:white}
+    .intro {background:linear-gradient(120deg,#0b1d36,#173a5d);color:white}
+    .intro-inner {max-width:1250px;margin:auto;padding:68px 34px 72px}
+    .eyebrow {color:#68d5f2;text-transform:uppercase;font-weight:700;font-size:13px;letter-spacing:2px}
+    h1 {font-family:Georgia,serif;font-weight:500;font-size:clamp(38px,5vw,57px);margin:12px 0 14px;line-height:1.12}
+    .intro p {max-width:850px;color:#e0ebf6;font-size:19px;margin:0}
+    main {max-width:1250px;margin:auto;padding:48px 34px 78px}
+    .layout {display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,1fr);gap:28px;align-items:start}
+    .panel {background:white;border:1px solid var(--line);border-radius:13px;padding:30px 32px;box-shadow:0 8px 24px rgba(15,41,72,.035)}
+    h2 {font-family:Georgia,serif;font-size:29px;line-height:1.2;margin:0 0 20px;color:#102944}
+    h3 {font-size:17px;color:#123755;margin:24px 0 8px}
+    p {margin:0 0 18px}
+    p:last-child {margin-bottom:0}
+    ul {padding-left:20px;margin:8px 0 0}
+    li {margin:7px 0}
+    .fact {border-bottom:1px solid var(--line);padding:0 0 18px;margin:0 0 18px}
+    .fact:last-child {border-bottom:0;margin-bottom:0;padding-bottom:0}
+    .fact strong {display:block;color:#102944;margin-bottom:4px}
+    .fact span {color:var(--muted)}
+    .section {margin-top:28px}
+    .interest-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .interest {border:1px solid var(--line);border-radius:10px;background:#fff;padding:20px}
+    .interest strong {display:block;color:#133755;margin-bottom:7px}
+    .interest p {font-size:14px;color:var(--muted)}
+    .actions {display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn {display:inline-block;text-decoration:none;background:#127da2;color:white;padding:11px 18px;border-radius:7px;font-weight:700;font-size:14px}
+    .btn.secondary {background:white;color:#123755;border:1px solid #9cb4c7}
+    footer {background:#0b1d36;color:#bbcede;text-align:center;padding:24px 18px;font-size:13px}
+    @media(max-width:850px){.header-inner{align-items:flex-start;flex-direction:column}.header-note{text-align:left}.layout{grid-template-columns:1fr}.intro-inner{padding:48px 22px}.panel{padding:25px 22px}main{padding:28px 20px 55px}nav{padding:0 12px}nav a{padding:12px 10px;font-size:12px}}
+    @media(max-width:520px){.interest-grid{grid-template-columns:1fr}.brand-name{font-size:21px}.intro p{font-size:17px}}
+  </style>
 </head>
-
-
 <body>
-
-<div class="topbar"></div>
-
-
-<header class="header">
-
-    <div class="brand">
-        <div class="brand-small">MUHAMMAD IMRAN, PhD</div>
-        <div class="brand-large">MEDICAL PHYSICS</div>
+  <header class="site-header">
+    <div class="header-inner">
+      <div><div class="brand-name">Muhammad Imran, PhD</div><div class="brand-tag">COMPUTATIONAL PHYSICS &amp; MEDICAL PHYSICS</div></div>
+      <div class="header-note">Scientific Computing · Numerical Modeling · Research &amp; Development</div>
     </div>
-
-    <div class="site-title">
-        Physics, Computation and<br>
-        Medical Imaging
+    <div class="nav-wrap"><nav aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="about.html" class="active" aria-current="page">ABOUT ME</a>
+      <a href="clinical.html">CLINICAL EXPERIENCE</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a href="cv.pdf">CV</a>
+      <a href="contact.html">CONTACT</a>
+    </nav></div>
+  </header>
+  <section class="intro"><div class="intro-inner">
+    <div class="eyebrow">Background &amp; expertise</div>
+    <h1>About Me</h1>
+    <p>Computational physicist with a foundation in theoretical physics, extensive research experience, and specialized medical physics training.</p>
+  </div></section>
+  <main>
+    <div class="layout">
+      <section class="panel">
+        <h2>Professional Background</h2>
+        <p>I hold a <strong>PhD in Physics from the University of Florida</strong>. My research spans theoretical and computational condensed matter physics, quantum transport, graphene and topological materials, and electromagnetic phenomena.</p>
+        <p>Through postdoctoral research, including work at <strong>Ames National Laboratory</strong>, I have applied mathematical models and numerical simulations to investigate complex physical systems. My work includes THz near-field electromagnetic modeling and scientific data analysis, with peer-reviewed publications in <em>Physical Review B</em>, <em>Optics Express</em>, <em>Journal of Physics: Condensed Matter</em>, and <em>Instruments</em>.</p>
+        <p>I use <strong>Python, MATLAB, and Mathematica</strong> for scientific computing, numerical analysis, simulation, and visualization. I have also developed practical software tools for technical and research workflows.</p>
+        <p>My medical physics background includes a medical physics certificate and clinical training involving radiation dosimetry, quality control, equipment performance assessment, and introductory radiation therapy planning activities, including organ-at-risk contouring in Eclipse and IMRT concepts. I am interested in further developing my career in <strong>therapeutic medical physics</strong>.</p>
+        <div class="actions">
+          <a class="btn" href="research.html">Explore Research</a>
+          <a class="btn secondary" href="cv.pdf">View CV</a>
+          <a class="btn secondary" href="https://github.com/imran1gee" target="_blank" rel="noopener noreferrer">GitHub Projects</a>
+        </div>
+      </section>
+      <aside class="panel" aria-label="Background at a glance">
+        <h2>At a Glance</h2>
+        <div class="fact"><strong>Education</strong><span>PhD in Physics · University of Florida<br>Certificate in Medical Physics · Florida Atlantic University</span></div>
+        <div class="fact"><strong>Research Experience</strong><span>Postdoctoral research, including Ames National Laboratory</span></div>
+        <div class="fact"><strong>Scientific Programming</strong><span>Python · MATLAB · Mathematica</span></div>
+        <div class="fact"><strong>Medical Physics</strong><span>Radiation dosimetry · Quality control · Radiation therapy planning fundamentals</span></div>
+        <div class="fact"><strong>Location</strong><span>Chicago, Illinois, USA</span></div>
+      </aside>
     </div>
-
-</header>
-
-
-<div class="nav-container">
-
-<nav>
-
-<a href="index.html">HOME</a>
-<a href="about.html" class="active">ABOUT ME</a>
-<a href="clinical.html">CLINICAL EXPERIENCE</a>
-<a href="research.html">RESEARCH</a>
-<a href="publications.html">PUBLICATIONS</a>
-<a href="cv.pdf">CV</a>
-<a href="contact.html">CONTACT</a>
-
-</nav>
-
-</div>
-
-
-<main class="about-container">
-
-<section>
-
-<h1>About Me</h1>
-
-<div class="about-text">
-
-<p>
-I am a Diagnostic Medical Physics Resident at the University of Chicago
-Medicine, with a background in physics, medical imaging, and quantitative
-image analysis.
-</p>
-
-<p>
-My professional interests include diagnostic imaging physics, image quality,
-radiation dosimetry, quality assurance, and the application of computational
-methods to medical imaging. My clinical training encompasses a broad range
-of imaging modalities, including radiography, fluoroscopy, CT, MRI,
-mammography, ultrasound, and nuclear medicine.
-</p>
-
-<p>
-My research interests focus on quantitative image-quality assessment,
-observer performance, and developing practical methods for evaluating
-medical imaging systems.
-</p>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Background at a Glance</h2>
-
-<div class="background">
-
-<h3>Current Position</h3>
-Diagnostic Medical Physics Resident<br>
-University of Chicago Medicine
-
-<h3>Education</h3>
-PhD in Physics (Theoretical Physics)<br><br>
-University of Florida
-
-<h3>Professional Interests</h3>
-Diagnostic Imaging<br>
-Image Quality<br>
-Radiation Dosimetry<br>
-Quality Assurance<br>
-Medical Imaging Research
-
-</div>
-
-</section>
-
-</main>
-
-
-<footer></footer>
-
+    <section class="section">
+      <h2>Areas of Expertise &amp; Interest</h2>
+      <div class="interest-grid">
+        <div class="interest"><strong>Computational Physics</strong><p>Quantum transport, condensed matter theory, graphene, and topological materials.</p></div>
+        <div class="interest"><strong>Electromagnetics</strong><p>THz near-field phenomena, electromagnetic modeling, and physics-based numerical simulation.</p></div>
+        <div class="interest"><strong>Scientific Software</strong><p>Numerical algorithms, scientific programming, simulation workflows, and data visualization.</p></div>
+        <div class="interest"><strong>Medical Physics</strong><p>Radiation physics, dosimetry, quality assurance, and developing expertise in therapeutic medical physics.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Muhammad Imran · Computational Physics &amp; Medical Physics</footer>
 </body>
-
 </html>
