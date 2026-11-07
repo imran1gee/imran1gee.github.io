@@ -1,14 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Contact Muhammad Imran, PhD — Computational Physicist specializing in scientific computing, numerical modeling, and medical physics.">
 <title>Contact | Muhammad Imran, PhD</title>
 
 <style>
-
 * {
     box-sizing: border-box;
 }
@@ -16,298 +15,384 @@
 body {
     margin: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #3d3d3d;
-    background: white;
-}
-
-/* TOP STRIP */
-
-.topbar {
-    height: 50px;
-    background: #7b0000;
+    background: #f3f6fc;
+    color: #17324f;
 }
 
 /* HEADER */
 
-.header {
-    max-width: 1150px;
+header {
+    background: #0b1d36;
+    color: white;
+}
+
+.header-inner {
+    max-width: 1250px;
     margin: auto;
-    padding: 42px 30px 35px;
+    padding: 28px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 25px;
 }
 
-.brand {
-    color: #800000;
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.brand-small {
-    font-size: 16px;
-    letter-spacing: 3px;
-}
-
-.brand-large {
-    font-family: Georgia, serif;
-    font-size: 37px;
+.brand-subtitle {
+    color: #9ccfe4;
+    font-size: 13px;
     letter-spacing: 2px;
+    margin-top: 6px;
+    font-weight: 700;
 }
 
-.site-title {
-    font-size: 32px;
-    line-height: 1.15;
-    font-weight: 300;
-    max-width: 470px;
+.header-right {
+    color: #c4d5e7;
+    font-size: 15px;
+    text-align: right;
 }
 
 /* NAVIGATION */
 
 .nav-container {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    background: #132b49;
 }
 
 nav {
-    max-width: 1150px;
+    max-width: 1250px;
     margin: auto;
-    display: flex;
     padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: #333;
+    display: block;
+    padding: 22px 17px;
+    color: #e5edf8;
     text-decoration: none;
-    padding: 20px 19px;
-    font-size: 16px;
-    letter-spacing: .5px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-nav a:hover {
-    color: #800000;
-}
-
+nav a:hover,
 nav a.active {
-    color: #800000;
-    border-bottom: 3px solid #800000;
+    background: #274a70;
+    color: white;
 }
 
-/* CONTACT PAGE */
+/* HERO */
 
-.contact-container {
-    max-width: 1150px;
+.hero {
+    background: linear-gradient(
+        110deg,
+        #0b1d36,
+        #193b60
+    );
+    color: white;
+    padding: 80px 30px 95px;
+}
+
+.hero-inner {
+    max-width: 1250px;
     margin: auto;
-    padding: 65px 30px 90px;
+}
 
+.eyebrow {
+    color: #58c7e9;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 6vw, 70px);
+    margin: 25px 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 900px;
+    color: #d0e1f2;
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+/* CONTACT CONTENT */
+
+.contact-section {
+    max-width: 1250px;
+    margin: auto;
+    padding: 65px 30px 100px;
+}
+
+.contact-grid {
     display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: 80px;
-    align-items: start;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 30px;
 }
 
-.contact-info {
-    font-size: 19px;
-    line-height: 1.65;
+.card {
+    background: white;
+    border: 1px solid #d7e3ef;
+    border-radius: 17px;
+    padding: 38px;
+    box-shadow: 0 8px 25px rgba(20,40,70,.04);
 }
 
-.contact-info h1 {
-    font-size: 25px;
-    margin: 0 0 2px;
-    font-weight: 700;
+.card h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 0 0 30px;
+    color: #102d4d;
 }
 
-.position {
-    font-size: 20px;
+.contact-item {
     margin-bottom: 25px;
 }
 
-.contact-block {
-    margin-bottom: 25px;
-}
-
-.contact-info strong {
+.contact-label {
+    color: #007da8;
+    font-size: 13px;
+    letter-spacing: 1.2px;
     font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
-.contact-info a {
-    color: #800000;
+.contact-value {
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.contact-value a {
+    color: #17618e;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-value a:hover {
     text-decoration: underline;
 }
 
-.contact-image {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    display: block;
+/* OPPORTUNITIES */
+
+.opportunity-list {
+    padding-left: 20px;
+    font-size: 17px;
+    line-height: 2;
+    color: #425d7b;
+}
+
+.opportunity-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #425d7b;
+}
+
+.button {
+    display: inline-block;
+    background: #50c1e2;
+    color: #09223b;
+    padding: 15px 24px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background: #88ddf4;
 }
 
 /* FOOTER */
 
 footer {
-    background: #333;
-    height: 45px;
-    margin-top: 30px;
+    background: #0b1d36;
+    color: #b7cce0;
+    padding: 28px 20px;
+    text-align: center;
+    font-size: 14px;
 }
 
 /* MOBILE */
 
 @media (max-width: 800px) {
-
-    .header {
+    .header-inner {
         display: block;
     }
 
-    .site-title {
-        margin-top: 25px;
+    .header-right {
+        text-align: left;
+        margin-top: 15px;
     }
 
     nav {
-        flex-wrap: wrap;
+        padding: 0 12px;
     }
 
     nav a {
-        padding: 12px;
+        padding: 14px 12px;
+        font-size: 12px;
     }
 
-    .contact-container {
-        display: block;
-        padding-top: 40px;
+    .hero {
+        padding: 55px 25px 65px;
     }
 
-    .contact-image {
-        margin-top: 45px;
+    .hero p {
+        font-size: 18px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 26px;
     }
 }
-
 </style>
-
 </head>
-
 
 <body>
 
-<div class="topbar"></div>
-
-
-<header class="header">
-
-    <div class="brand">
-
-        <div class="brand-small">
-            MUHAMMAD IMRAN, PhD
+<header>
+    <div class="header-inner">
+        <div>
+            <div class="brand-name">
+                Muhammad Imran, PhD
+            </div>
+            <div class="brand-subtitle">
+                COMPUTATIONAL PHYSICS &amp; MEDICAL PHYSICS
+            </div>
         </div>
 
-        <div class="brand-large">
-            MEDICAL PHYSICS
+        <div class="header-right">
+            Scientific Computing · Numerical Modeling ·
+            Research &amp; Development
         </div>
-
     </div>
-
-
-    <div class="site-title">
-        Physics, Computation and<br>
-        Medical Imaging
-    </div>
-
 </header>
 
-
 <div class="nav-container">
-
-<nav>
-
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT ME</a>
-<a href="clinical.html">CLINICAL EXPERIENCE</a>
-<a href="research.html">RESEARCH</a>
-<a href="publications.html">PUBLICATIONS</a>
-<a href="cv.pdf">CV</a>
-<a href="contact.html" class="active">CONTACT</a>
-
+<nav aria-label="Main navigation">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT ME</a>
+    <a href="clinical.html">CLINICAL EXPERIENCE</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="cv.pdf">CV</a>
+    <a href="contact.html" class="active" aria-current="page">CONTACT</a>
 </nav>
-
 </div>
 
+<section class="hero">
+    <div class="hero-inner">
+        <div class="eyebrow">
+            PROFESSIONAL CONNECTIONS · COLLABORATION
+        </div>
 
-<main class="contact-container">
+        <h1>Get in Touch</h1>
 
-
-<section class="contact-info">
-
-<h1>Muhammad Imran, PhD</h1>
-
-<div class="position">
-Diagnostic Medical Physics Resident
-</div>
-
-
-<div class="contact-block">
-
-<strong>Class</strong> 2025–2027<br>
-
-<strong>Department of Radiology</strong><br>
-
-University of Chicago Medicine
-
-</div>
-
-
-<div class="contact-block">
-
-5841 S. Maryland Ave.<br>
-Chicago, IL 60637
-
-</div>
-
-
-<div class="contact-block">
-
-<strong>Institutional Email:</strong>
-<a href="mailto:Muhammad.Imran@uchicagomedicine.org">
-Muhammad.Imran@uchicagomedicine.org
-</a>
-
-<br>
-
-<strong>Personal Email:</strong>
-<a href="mailto:imran1gee@gmail.com">
-imran1gee@gmail.com
-</a>
-
-<br>
-
-<strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/muhammad-imran-91982252/"
-   target="_blank"
-   rel="noopener">
-Muhammad Imran
-</a>
-
-</div>
-
-
+        <p>
+            I welcome opportunities for research collaboration,
+            scientific software development, computational modeling,
+            and medical physics. I am particularly interested in
+            positions where physics-based reasoning, numerical
+            simulation, and scientific computing can contribute
+            to technological innovation and real-world applications.
+        </p>
+    </div>
 </section>
 
+<main class="contact-section">
 
-<section>
+<div class="contact-grid">
 
-<img
-class="contact-image"
-src="contact-photo.png"
-alt="Muhammad Imran">
+<section class="card">
+    <h2>Contact Information</h2>
 
+    <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">
+            <a href="mailto:imran1gee@gmail.com">
+                imran1gee@gmail.com
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">
+            <a href="https://www.linkedin.com/in/muhammad-imran-91982252/"
+               target="_blank" rel="noopener noreferrer">
+                Connect on LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">
+            <a href="https://github.com/imran1gee"
+               target="_blank" rel="noopener noreferrer">
+                github.com/imran1gee
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="contact-label">Location</div>
+        <div class="contact-value">
+            Chicago, Illinois, USA
+        </div>
+    </div>
+
+    <a class="button" href="mailto:imran1gee@gmail.com">
+        Send an Email
+    </a>
 </section>
 
+<section class="card">
+    <h2>Professional Interests</h2>
+
+    <p class="opportunity-text">
+        I am interested in professional opportunities
+        and collaborations involving:
+    </p>
+
+    <ul class="opportunity-list">
+        <li>Computational Physics</li>
+        <li>Scientific Computing</li>
+        <li>Numerical Modeling &amp; Simulation</li>
+        <li>Computational Electromagnetics</li>
+        <li>Research &amp; Development</li>
+        <li>Scientific Software Development</li>
+        <li>Medical Physics</li>
+        <li>Radiation Physics &amp; Dosimetry</li>
+    </ul>
+
+    <p class="opportunity-text">
+        I welcome inquiries from research institutions,
+        universities, healthcare organizations,
+        and technology companies.
+    </p>
+</section>
+
+</div>
 
 </main>
 
-
-<footer></footer>
-
+<footer>
+    © 2026 Muhammad Imran, PhD ·
+    Computational Physics &amp; Medical Physics
+</footer>
 
 </body>
-
 </html>
