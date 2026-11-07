@@ -1,385 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Peer-reviewed publications and research presentations by Muhammad Imran, PhD, in computational physics, quantum transport, terahertz optics, and medical physics.">
 <title>Publications | Muhammad Imran, PhD</title>
-
 <style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #3d3d3d;
-    background: white;
-}
-
-/* TOP STRIP */
-
-.topbar {
-    height: 50px;
-    background: #7b0000;
-}
-
-/* HEADER */
-
-.header {
-    max-width: 1150px;
-    margin: auto;
-    padding: 42px 30px 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    color: #800000;
-}
-
-.brand-small {
-    font-size: 16px;
-    letter-spacing: 3px;
-}
-
-.brand-large {
-    font-family: Georgia, serif;
-    font-size: 37px;
-    letter-spacing: 2px;
-}
-
-.site-title {
-    font-size: 32px;
-    line-height: 1.15;
-    font-weight: 300;
-    max-width: 470px;
-}
-
-/* NAVIGATION */
-
-.nav-container {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-nav {
-    max-width: 1150px;
-    margin: auto;
-    display: flex;
-    padding: 0 30px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 20px 19px;
-    font-size: 16px;
-    letter-spacing: .5px;
-}
-
-nav a:hover {
-    color: #800000;
-}
-
-nav a.active {
-    color: #800000;
-    border-bottom: 3px solid #800000;
-}
-
-/* PUBLICATIONS */
-
-.publications-container {
-    max-width: 1050px;
-    margin: auto;
-    padding: 60px 30px 90px;
-}
-
-.publications-container h1 {
-    font-size: 38px;
-    font-weight: 500;
-    margin: 0 0 45px;
-}
-
-.publications-container h2 {
-    font-size: 27px;
-    color: #800000;
-    font-weight: 600;
-    margin: 45px 0 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.publication {
-    margin-bottom: 32px;
-    font-size: 19px;
-    line-height: 1.55;
-}
-
-.authors {
-    font-weight: 600;
-}
-
-.title {
-    font-weight: 600;
-    margin-top: 3px;
-}
-
-.journal {
-    font-style: italic;
-    margin-top: 3px;
-}
-
-.scholar-link {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 20px;
-    background: #800000;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.scholar-link:hover {
-    background: #5f0000;
-}
-
-/* FOOTER */
-
-footer {
-    background: #333;
-    height: 45px;
-    margin-top: 30px;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .header {
-        display: block;
-    }
-
-    .site-title {
-        margin-top: 25px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        padding: 12px;
-    }
-
-    .publications-container {
-        padding-top: 40px;
-    }
-}
-
+:root{--navy:#0b1c35;--navy2:#17385b;--cyan:#55c8e8;--ink:#172e49;--muted:#52647a;--paper:#f3f6fb}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+header{background:var(--navy);color:#fff}.header-inner{max-width:1200px;margin:auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center;gap:25px}.brand{font-size:22px;font-weight:700;line-height:1.4}.brand small{display:block;color:#a0d8eb;font-size:12px;letter-spacing:2px;text-transform:uppercase}.tagline{color:#c5d8e9;font-size:15px;text-align:right}.nav-wrap{background:#112746}nav{max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;padding:0 32px}nav a{color:#e5edf7;text-decoration:none;padding:17px 15px;font-size:13px;font-weight:700;letter-spacing:.3px}nav a:hover,nav a.active{background:#25476c;color:#fff}
+.hero{background:linear-gradient(115deg,#0b1c35,#17385b);color:white}.hero-inner{max-width:1200px;margin:auto;padding:72px 32px 76px}.eyebrow{color:#61d0ef;letter-spacing:2px;text-transform:uppercase;font-size:13px;font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(38px,5vw,62px);line-height:1.15;margin:18px 0 22px}.hero p{font-size:19px;max-width:850px;color:#d9e7f5;line-height:1.8;margin:0 0 25px}.scholar{display:inline-block;background:#55c8e8;color:#09233a;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:7px}.scholar:hover{background:#8cdef3}
+main{max-width:1200px;margin:auto;padding:52px 32px 80px}.section-title{font-family:Georgia,serif;font-size:32px;color:#102b49;margin:36px 0 22px}.pub-list{display:grid;gap:16px}.pub{background:white;border:1px solid #dbe4ee;border-radius:14px;padding:25px 29px;box-shadow:0 8px 25px rgba(12,35,65,.04)}.pub h3{font-family:Georgia,serif;font-size:22px;line-height:1.4;color:#123457;margin:5px 0 12px}.pub .authors{font-size:15px;color:#42566e;margin:0 0 8px}.pub .journal{font-size:15px;color:#52647a;margin:0}.pub .year{color:#087fa5;font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase}.pub a{color:#087fa5;text-decoration:none;font-weight:700}.pub a:hover{text-decoration:underline}.pub .links{margin-top:12px;font-size:14px}footer{background:#0b1c35;color:#c2d3e4;padding:25px 32px;text-align:center;font-size:13px}
+@media(max-width:760px){.header-inner{display:block}.tagline{text-align:left;margin-top:12px}nav{padding:0 12px}nav a{padding:12px 10px;font-size:12px}.hero-inner{padding:55px 24px}main{padding:30px 20px 55px}.pub{padding:22px}.section-title{font-size:27px}}
 </style>
-
 </head>
-
-
 <body>
-
-<div class="topbar"></div>
-
-
-<header class="header">
-
-    <div class="brand">
-
-        <div class="brand-small">
-            MUHAMMAD IMRAN, PhD
-        </div>
-
-        <div class="brand-large">
-            MEDICAL PHYSICS
-        </div>
-
-    </div>
-
-
-    <div class="site-title">
-        Physics, Computation and<br>
-        Medical Imaging
-    </div>
-
-</header>
-
-
-<div class="nav-container">
-
-<nav>
-
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT ME</a>
-<a href="clinical.html">CLINICAL EXPERIENCE</a>
-<a href="research.html">RESEARCH</a>
-<a href="publications.html" class="active">PUBLICATIONS</a>
-<a href="cv.pdf">CV</a>
-<a href="contact.html">CONTACT</a>
-
-</nav>
-
+<header><div class="header-inner"><div class="brand">Muhammad Imran, PhD<small>Computational Physics &amp; Medical Physics</small></div><div class="tagline">Scientific Computing · Numerical Modeling · Research &amp; Development</div></div></header>
+<div class="nav-wrap"><nav aria-label="Main navigation"><a href="index.html">HOME</a><a href="about.html">ABOUT ME</a><a href="clinical.html">CLINICAL EXPERIENCE</a><a href="research.html">RESEARCH</a><a href="publications.html" class="active" aria-current="page">PUBLICATIONS</a><a href="cv.pdf">CV</a><a href="contact.html">CONTACT</a></nav></div>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Peer-Reviewed Research · Scientific Publications</div><h1>Publications &amp; Presentations</h1><p>My publications span quantum transport, condensed matter theory, graphene, terahertz near-field optics, and applied medical physics. These studies combine analytical physics, numerical modeling, and collaborative experimental research.</p><a class="scholar" href="https://scholar.google.com/citations?user=8_gyWWMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">View Google Scholar Profile ↗</a></div></section>
+<main>
+<h2 class="section-title">Terahertz Optics &amp; Electromagnetic Research</h2>
+<div class="pub-list">
+<article class="pub"><div class="year">2024 · Optics Express</div><h3>Nano-compositional imaging of the lanthanum silicide system at THz wavelengths</h3><p class="authors">R. H. J. Kim, A. K. Pathak, J. M. Park, M. Imran, S. J. Haeuser, Z. Fei, Y. Mudryk, et al.</p><p class="journal"><em>Optics Express</em> 32(2), 2356–2363 (2024).</p><p class="links"><a href="https://scholar.google.com/scholar?q=Nano-compositional+imaging+of+the+lanthanum+silicide+system+at+THz+wavelengths" target="_blank" rel="noopener noreferrer">Find publication ↗</a></p></article>
+<article class="pub"><div class="year">2024 · Instruments</div><h3>Analysis of Near-Field Magnetic Responses on ZrTe5 through Cryogenic Magneto-THz Nano-Imaging</h3><p class="authors">S. Haeuser, R. H. J. Kim, J. M. Park, R. K. Chan, M. Imran, T. Koschny, J. Wang</p><p class="journal"><em>Instruments</em> 8(1), 21 (2024).</p><p class="links"><a href="https://scholar.google.com/scholar?q=Analysis+of+Near-Field+Magnetic+Responses+on+ZrTe5+through+Cryogenic+Magneto-THz+Nano-Imaging" target="_blank" rel="noopener noreferrer">Find publication ↗</a></p></article>
 </div>
-
-
-<main class="publications-container">
-
-
-<h1>Selected Publications &amp; Presentations</h1>
-
-
-<h2>Medical Physics</h2>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran, I. Reiser, and Z. F. Lu
+<h2 class="section-title">Quantum Transport &amp; Condensed Matter Physics</h2>
+<div class="pub-list">
+<article class="pub"><div class="year">2023 · Physical Review B</div><h3>Hofstadter moiré butterfly in twisted trilayer graphene</h3><p class="authors">M. Imran, P. M. Haney, Y. Barlas</p><p class="journal"><em>Physical Review B</em> 108, 085417 (2023).</p><p class="links"><a href="https://doi.org/10.1103/PhysRevB.108.085417" target="_blank" rel="noopener noreferrer">Read paper ↗</a></p></article>
+<article class="pub"><div class="year">2020 · Journal of Physics: Condensed Matter</div><h3>Quantizing viscous transport in bilayer graphene</h3><p class="authors">M. Imran</p><p class="journal"><em>Journal of Physics: Condensed Matter</em> 33, 045603 (2020).</p><p class="links"><a href="https://scholar.google.com/scholar?q=Quantizing+viscous+transport+in+bilayer+graphene" target="_blank" rel="noopener noreferrer">Find publication ↗</a></p></article>
+<article class="pub"><div class="year">2019 · Physical Review B</div><h3>Exploiting the violation of Lorentz symmetry for the planar Hall effect</h3><p class="authors">M. Imran, S. Hershfield</p><p class="journal"><em>Physical Review B</em> 100, 041201 (2019).</p><p class="links"><a href="https://doi.org/10.1103/PhysRevB.100.041201" target="_blank" rel="noopener noreferrer">Read paper ↗</a></p></article>
+<article class="pub"><div class="year">2018 · Physical Review B</div><h3>Berry curvature force and Lorentz force comparison in the magnetotransport of Weyl semimetals</h3><p class="authors">M. Imran, S. Hershfield</p><p class="journal"><em>Physical Review B</em> 98, 205139 (2018).</p><p class="links"><a href="https://doi.org/10.1103/PhysRevB.98.205139" target="_blank" rel="noopener noreferrer">Read paper ↗</a></p></article>
+<article class="pub"><div class="year">2016 · Physical Review B</div><h3>Electron spin resonance in a two-dimensional Fermi liquid with spin-orbit coupling</h3><p class="authors">S. Maiti, M. Imran, D. L. Maslov</p><p class="journal"><em>Physical Review B</em> 93, 045134 (2016).</p><p class="links"><a href="https://doi.org/10.1103/PhysRevB.93.045134" target="_blank" rel="noopener noreferrer">Read paper ↗</a></p></article>
+<article class="pub"><div class="year">2014 · Physica B</div><h3>Electron transport through a diatomic molecule</h3><p class="authors">M. Imran</p><p class="journal"><em>Physica B: Condensed Matter</em> 446, 1–5 (2014).</p><p class="links"><a href="https://scholar.google.com/scholar?q=Electron+transport+through+a+diatomic+molecule+Muhammad+Imran" target="_blank" rel="noopener noreferrer">Find publication ↗</a></p></article>
+<article class="pub"><div class="year">2013 · European Physical Journal B</div><h3>Electron transport through a quantum dot in the presence of electron-photon and electron-phonon coupling</h3><p class="authors">M. Imran</p><p class="journal"><em>The European Physical Journal B</em> 86, 1–7 (2013).</p><p class="links"><a href="https://scholar.google.com/scholar?q=Electron+transport+through+a+quantum+dot+in+the+presence+of+electron-photon+and+electron-phonon+coupling" target="_blank" rel="noopener noreferrer">Find publication ↗</a></p></article>
 </div>
-
-<div class="title">
-“Ranking of Mobile C-Arm Image Quality Using Contrast–Detail
-Detectability Metrics.”
-</div>
-
-<div class="journal">
-AAPM-COMP Joint Annual Meeting, Vancouver, Canada, 2026.
-</div>
-
-</div>
-
-
-<h2>Physics Research</h2>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran, P. M. Haney, and Y. Barlas
-</div>
-
-<div class="title">
-“Hofstadter moiré butterfly in twisted trilayer graphene.”
-</div>
-
-<div class="journal">
-Physical Review B 108, 085417 (2023).
-</div>
-
-</div>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran
-</div>
-
-<div class="title">
-“Quantizing viscous transport in bilayer graphene.”
-</div>
-
-<div class="journal">
-Journal of Physics: Condensed Matter 33, 045603 (2020).
-</div>
-
-</div>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran and S. Hershfield
-</div>
-
-<div class="title">
-“Exploiting the violation of Lorentz symmetry for the planar Hall effect.”
-</div>
-
-<div class="journal">
-Physical Review B 100, 041201 (2019).
-</div>
-
-</div>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran and S. Hershfield
-</div>
-
-<div class="title">
-“Berry curvature force and Lorentz force comparison in the
-magnetotransport of Weyl semimetals.”
-</div>
-
-<div class="journal">
-Physical Review B 98, 205139 (2018).
-</div>
-
-</div>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran
-</div>
-
-<div class="title">
-“Electron transport through a diatomic molecule.”
-</div>
-
-<div class="journal">
-Physica B: Condensed Matter 446, 1–5 (2014).
-</div>
-
-</div>
-
-
-<div class="publication">
-
-<div class="authors">
-M. Imran
-</div>
-
-<div class="title">
-“Electron transport through a quantum dot in the presence of
-electron-photon and electron-phonon coupling.”
-</div>
-
-<div class="journal">
-The European Physical Journal B 86, 1–7 (2013).
-</div>
-
-</div>
-
-
-<a
-class="scholar-link"
-href="https://scholar.google.com/citations?user=8_gyWWMAAAAJ&hl=en"
-target="_blank"
-rel="noopener">
-View Full Publication Record
-</a>
-
-
+<h2 class="section-title">Medical Physics Research &amp; Presentations</h2>
+<div class="pub-list"><article class="pub"><div class="year">2026 · AAPM-COMP Joint Annual Meeting</div><h3>Ranking of Mobile C-Arm Image Quality Using Contrast–Detail Detectability Metrics</h3><p class="authors">M. Imran, I. Reiser, Z. F. Lu</p><p class="journal">Research abstract, AAPM-COMP Joint Annual Meeting, Vancouver, Canada (2026).</p></article></div>
 </main>
-
-
-<footer></footer>
-
-
+<footer>© 2026 Muhammad Imran, PhD · Computational Physics &amp; Medical Physics</footer>
 </body>
-
 </html>
