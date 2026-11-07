@@ -1,257 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Muhammad Imran, PhD</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Muhammad Imran, PhD — computational physicist specializing in scientific computing, numerical modeling, electromagnetics and medical physics.">
+<title>Muhammad Imran, PhD | Computational Physics & Medical Physics</title>
 <style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #3d3d3d;
-    background: white;
-}
-
-/* TOP STRIP */
-
-.topbar {
-    height: 50px;
-    background: #7b0000;
-}
-
-/* HEADER */
-
-.header {
-    max-width: 1150px;
-    margin: auto;
-    padding: 42px 30px 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand {
-    color: #800000;
-}
-
-.brand-small {
-    font-size: 16px;
-    letter-spacing: 3px;
-}
-
-.brand-large {
-    font-family: Georgia, serif;
-    font-size: 37px;
-    letter-spacing: 2px;
-}
-
-.site-title {
-    font-size: 32px;
-    line-height: 1.15;
-    font-weight: 300;
-    max-width: 470px;
-}
-
-/* NAVIGATION */
-
-.nav-container {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-nav {
-    max-width: 1150px;
-    margin: auto;
-    display: flex;
-    padding: 0 30px;
-}
-
-nav a {
-    color: #333;
-    text-decoration: none;
-    padding: 20px 19px;
-    font-size: 16px;
-    letter-spacing: .5px;
-}
-
-nav a:first-child {
-    color: #800000;
-    border-bottom: 3px solid #800000;
-}
-
-nav a:hover {
-    color: #800000;
-}
-
-/* HOME */
-
-.hero {
-    max-width: 1150px;
-    margin: auto;
-    padding: 55px 30px 80px;
-    display: grid;
-    grid-template-columns: 1.6fr .8fr;
-    gap: 80px;
-    align-items: start;
-}
-
-.hero h1 {
-    font-size: 38px;
-    font-weight: 300;
-    margin: 0 0 5px;
-}
-
-.position {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-.details {
-    font-size: 19px;
-    line-height: 1.6;
-    margin-bottom: 65px;
-}
-
-.bio {
-    max-width: 690px;
-    font-size: 20px;
-    line-height: 1.65;
-}
-
-.photo {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-}
-
-/* FOOTER */
-
-footer {
-    background: #333;
-    height: 45px;
-    margin-top: 30px;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    .header {
-        display: block;
-    }
-
-    .site-title {
-        margin-top: 25px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        padding: 12px;
-    }
-
-    .hero {
-        display: block;
-        padding-top: 40px;
-    }
-
-    .photo {
-        margin-top: 40px;
-    }
-}
-
+:root{--navy:#0b1c35;--navy2:#132c4d;--cyan:#55c6e8;--ink:#1d2939;--muted:#596779;--line:#dce5ef;--bg:#f5f8fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{color:#135d96}a:hover{color:#087eaa}.wrap{max-width:1140px;margin:auto;padding-left:28px;padding-right:28px}.topbar{height:7px;background:linear-gradient(90deg,#38d0e8,#4370bd,#101e40)}
+header{background:var(--navy);color:#fff}.mast{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-top:25px;padding-bottom:25px}.identity{font-size:19px;font-weight:750;letter-spacing:.3px}.identity small{display:block;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9bd6e9;font-weight:600}.mast-note{color:#c6d8e8;font-size:14px;text-align:right}
+nav{background:#102744;border-top:1px solid #2b4260}nav .wrap{display:flex;gap:5px;flex-wrap:wrap}nav a{display:inline-block;color:#e7f0fa;text-decoration:none;padding:13px 14px;font-size:12px;font-weight:700;letter-spacing:.5px}nav a:hover,nav a.active{background:#25476c;color:#fff}
+.hero{background:linear-gradient(135deg,#0b1c35 0%,#173a5e 100%);color:white;padding:72px 0 82px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(210px,.65fr);gap:65px;align-items:center}.eyebrow{color:#76d9ef;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700}.hero h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(36px,5vw,59px);line-height:1.13;margin:13px 0 17px}.tagline{font-size:18px;color:#b9d8ed;margin:0 0 22px}.hero p{max-width:660px;color:#e3edf7;font-size:16px}.portrait{width:100%;max-width:290px;aspect-ratio:1/1;object-fit:cover;border-radius:18px;border:4px solid #6389ad;box-shadow:0 18px 45px #0005}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}.btn{display:inline-block;text-decoration:none;padding:11px 19px;border-radius:7px;font-weight:700;font-size:14px;background:#56c7e7;color:#071c32}.btn:hover{background:#a4eafa;color:#071c32}.btn.secondary{background:transparent;color:white;border:1px solid #93b1cd}.btn.secondary:hover{background:#ffffff1a}
+section{padding:55px 0}.section-title{font-family:Georgia,serif;font-size:29px;color:#112b4a;margin:0 0 10px}.intro{max-width:810px;color:var(--muted);margin:0 0 27px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 4px 18px #10263b08}.card h3{margin:0 0 9px;color:#15365b;font-size:17px}.card p{margin:0;color:#5a6879;font-size:14px}.projects{background:#edf3f9}.project-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project{background:white;border:1px solid var(--line);padding:22px;border-radius:10px}.project h3{font-size:17px;margin:0 0 8px}.project p{font-size:14px;color:var(--muted);margin:0 0 10px}.project a{font-weight:700;font-size:13px}.footer{background:#0b1c35;color:#b9cddd;padding:28px 0;font-size:13px}.footer a{color:#9fdef4}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.mast{align-items:flex-start}.mast-note{display:none}.hero{padding:48px 0}.hero-grid{grid-template-columns:1fr;gap:25px}.portrait{max-width:210px}.cards,.project-list{grid-template-columns:1fr}nav a{padding:11px 9px;font-size:11px}section{padding:40px 0}}
 </style>
 </head>
-
-
 <body>
-
 <div class="topbar"></div>
-
-
-<header class="header">
-
-    <div class="brand">
-        <div class="brand-small">MUHAMMAD IMRAN, PhD</div>
-        <div class="brand-large">MEDICAL PHYSICS  </div>
-    </div>
-
-    <div class="site-title">
-        Physics, Computation and<br>
-        Medical Imaging
-    </div>
-
-</header>
-
-
-<div class="nav-container">
-
-<nav>
-
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT ME</a>
-<a href="clinical.html">CLINICAL EXPERIENCE</a>
-<a href="research.html">RESEARCH</a>
-<a href="publications.html">PUBLICATIONS</a>
-<a href="cv.pdf">CV</a>
-<a href="contact.html">CONTACT</a>
-
-</nav>
-
-</div>
-
-
-<main class="hero">
-
-<div>
-
-<h1>Muhammad Imran, PhD</h1>
-
-<div class="position">
-Diagnostic Medical Physics Resident
-</div>
-
-<div class="details">
-Class 2025–2027<br>
-University of Chicago Medicine
-</div>
-
-<div class="bio">
-
-Clinical medical physics resident with interests in diagnostic imaging,
-image quality, radiation dosimetry, quality assurance, and medical
-imaging research.
-
-</div>
-
-</div>
-
-
-<div>
-
-<img class="photo"
-     src="Profile.png"
-     alt="Muhammad Imran">
-
-</div>
-
-</main>
-
-
-<footer></footer>
-
-</body>
-
-</html>
+<header><div class="wrap mast"><div class="identity">Muhammad Imran, PhD<small>Computational Physics &amp; Medical Physics</small></div><div class="mast-note">Scientific Computing · Numerical Modeling · Research &amp; Development</div></div></header>
+<nav aria-label="Main navigation"><div class="wrap"><a class="active" href="index.html">HOME</a><a href="about.html">ABOUT ME</a><a href="clinical.html">CLINICAL EXPERIENCE</a><a href="research.html">RESEARCH</a><a href="publications.html">PUBLICATIONS</a><a href="cv.pdf">CV</a><a href="contact.html">CONTACT</a></div></nav>
+<main>
+<div class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Physicist · Researcher · Scientific Programmer</div><h1>Muhammad Imran, PhD</h1><div class="tagline">Computational Physics | Scientific Computing | Medical Physics</div><p>Computational physicist with a PhD in Physics from the University of Florida, extensive postdoctoral research experience, and specialized medical physics training. My work spans quantum transport, condensed matter theory, electromagnetic modeling, numerical simulation, and scientific software development.</p><p>Research experience includes Ames National Laboratory and peer-reviewed publications in <em>Physical Review B</em>, <em>Optics Express</em>, and other scientific journals.</p><div class="actions"><a class="btn" href="research.html">Explore Research</a><a class="btn secondary" href="cv.pdf">View CV</a><a class="btn secondary" href="https://github.com/imran1gee" target="_blank" rel="noopener noreferrer">GitHub Projects</a></div></div><div><img class="portrait" src="muhmmad-imran.png" alt="Professional portrait of Muhammad Imran" onerror="this.onerror=null;this.src='Profile.png';"></div></div></div>
+<section><div class="wrap"><h2 class="section-title">Areas of Expertise</h2><p class="intro">A research background connecting fundamental physics, numerical methods, software development, and practical medical physics applications.</p><div class="cards"><article class="card"><h3>Computational Physics</h3><p>Quantum transport, graphene, topological materials, condensed matter theory, and physics-based numerical modeling.</p></article><article class="card"><h3>Scientific Computing</h3><p>Python, MATLAB, Mathematica, Fourier analysis, matrix computations, simulation automation, and parallel numerical workflows.</p></article><article class="card"><h3>Medical Physics</h3><p>Radiation dosimetry, equipment quality control, Monte Carlo dose simulation, and foundational radiation therapy planning concepts including Eclipse TPS and IMRT.</p></article></div></div></section>
+<section class="projects"><div class="wrap"><h2 class="section-title">Selected Projects</h2><p class="intro">Examples of computational research and practical scientific software.</p><div class="project-list"><article class="project"><h3>Hofstadter Butterfly</h3><p>Numerical modeling of magnetic-field-dependent electronic structure in quantum materials.</p><a href="https://github.com/imran1gee/Hofstadter-Butterfly">Explore repository →</a></article><article class="project"><h3>THz Near-Field &amp; AFM Modeling</h3><p>Computational studies of near-field responses and electromagnetic phenomena.</p><a href="https://github.com/imran1gee?tab=repositories">Explore repositories →</a></article><article class="project"><h3>Monte Carlo Radiation Dose</h3><p>Simulation of radiation dose in a water phantom.</p><a href="https://github.com/imran1gee/MonteCarlo-Radiation-Dose">Explore repository →</a></article><article class="project"><h3>Portable Radiography QC Manager</h3><p>Python application for radiography quality-control calculations and automated Excel reporting.</p><a href="https://github.com/imran1gee?tab=repositories">Explore repositories →</a></article></div></div></section>
+<section><div class="wrap"><h2 class="section-title">Research &amp; Publications</h2><p class="intro">My peer-reviewed research covers electron transport, Weyl semimetals, graphene, and THz near-field phenomena. Explore my publications and research experience for further details.</p><div class="actions"><a class="btn" href="publications.html">View Publications</a><a class="btn secondary" style="color:#15365b;border-color:#90a7c0" href="about.html">About Me</a></div></div></section>
+</main><footer class="footer"><div class="wrap footer-inner"><span>© 2026 Muhammad Imran, PhD · Chicago, Illinois</span><span><a href="https://github.com/imran1gee">GitHub</a> · <a href="https://www.linkedin.com/in/muhammad-imran-91982252/">LinkedIn</a> · <a href="contact.html">Contact</a></span></div></footer>
+</body></html>
